@@ -27,7 +27,7 @@ int main()
         scanf("%d", &code);
               if (code == 1)
         {
-            printf("请输入车辆位置的x坐标和y坐标：\n");
+            printf("qingchurucheliangweizhidexzuobiao和yzuobiao：\n");
             int x;
             int y;
             scanf("%d", &x);
@@ -38,7 +38,7 @@ int main()
 
              index++;
 
-             printf("添加完成，点击回车继续\n");
+             printf("tianjiawancheng，dianjihuichejixu\n");
             char xx;
             scanf("%c",&xx);
             scanf("%c",&xx);
@@ -47,6 +47,24 @@ int main()
         }
         if (code == 2)
         {
+              if (index > 0)
+            {
+                
+                index--;
+                printf("shanchuwancheng，dianjihuichejixu\n");
+                char xx;
+                scanf("%c", &xx);
+                scanf("%c", &xx);
+            }
+            else
+            {
+                
+                printf("wuchengliangweizhixinxi，shanchushibai，dianjihuichejixu\n");
+                char xx;
+                scanf("%c", &xx);
+                scanf("%c", &xx);
+            }
+
         }
         if (code == 3)
         {
