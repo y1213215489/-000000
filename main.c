@@ -5,15 +5,13 @@ struct Point
     int y;
 };
 
-
 int main()
 {
     int index = 0;
     struct Point arr[100];
 
-
     printf("huanyingjinruzhuanchangguanlixitong!\n");
-    
+
     while (1)
     {
         printf("1---tianjiacheliangweizhi\n");
@@ -21,11 +19,11 @@ int main()
         printf("3---xianshiquanbucheliangweizhi\n");
         printf("4---fanhuiliwozuijincheliangweizhi\n");
         printf("5---tuichu\n");
-         
+
         printf("qingxuanzexiangyinggongneng\n");
         int code;
         scanf("%d", &code);
-              if (code == 1)
+        if (code == 1)
         {
             printf("qingchurucheliangweizhidexzuobiao和yzuobiao：\n");
             int x;
@@ -33,23 +31,21 @@ int main()
             scanf("%d", &x);
             scanf("%d", &y);
 
-             arr[index].x = x;
+            arr[index].x = x;
             arr[index].y = y;
 
-             index++;
+            index++;
 
-             printf("tianjiawancheng，dianjihuichejixu\n");
+            printf("tianjiawancheng，dianjihuichejixu\n");
             char xx;
-            scanf("%c",&xx);
-            scanf("%c",&xx);
-
-
+            scanf("%c", &xx);
+            scanf("%c", &xx);
         }
         if (code == 2)
         {
-              if (index > 0)
+            if (index > 0)
             {
-                
+
                 index--;
                 printf("shanchuwancheng，dianjihuichejixu\n");
                 char xx;
@@ -58,26 +54,41 @@ int main()
             }
             else
             {
-                
+
                 printf("wuchengliangweizhixinxi，shanchushibai，dianjihuichejixu\n");
                 char xx;
                 scanf("%c", &xx);
                 scanf("%c", &xx);
             }
-
         }
         if (code == 3)
         {
-        }
-        if (code == 4)
-        {
-        }
-        if (code == 5)
-        {
-             printf("yingyongyijingtuichu\n");
-            break;
-        }
-    }
-        return 0;
+            printf("suoyoucheliangweizhiruxia：\n");
 
+            for (int i = 0; i < index; i++)
+
+                for (int i = 0; i < index; i++)
+                {
+                    printf("di%dgecheliangdeweizhiwei(%d,%d)\n", i + 1, arr[i].x, arr[i].y);
+                    printf("di%dgecheliangdeweizhiwei(%d,%d)\n", i + 1, arr[i].x, arr[i].y);
+                }
+
+            printf("\n点击回车继续\n");
+            char xx;
+            scanf("%c", &xx);
+            scanf("%c", &xx);
+
+            scanf("%c", &xx);
+            scanf("%c", &xx);
+        }
+    if (code == 4)
+    {
+    }
+    if (code == 5)
+    {
+        printf("yingyongyijingtuichu\n");
+        break;
+    }
+}
+return 0;
 }
