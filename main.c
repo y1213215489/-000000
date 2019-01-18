@@ -1,127 +1,58 @@
 #include <stdio.h>
-struct Point
-{
-    int x;
-    int y;
+struct Student{
+ int yuwen;
+ int shuxue;
+int yingyu;
+   char name[100];
 };
+int main(){
 
-int main()
-{
-    int index = 0;
-    struct Point arr[100];
+       printf("xueshengchengjiguanli\n");
+        while(1){
+        printf("1----tianjiaxueshnrgchengji\n");
+        printf("2----shanchuxueshengchengji\n");
+        printf("3----xianshisuoyou\n");
+        printf("4----yewu1,syoyouzongfenbujigedexuesheng(<180)\n");
+        printf("5----yewu2,meiyikedoubujigedexuesheng\n");
+        printf("6----yewu3,xianshizongfenzuigaodexuesheng\n");
+           printf("7----yewu4,xianshipingjunfenzuigao,qiemeiyoubujigedexuesheng\n");
+        printf("8----Tc\n");
 
-    printf("huanyingjinruzhuanchangguanlixitong!\n");
+        printf("Qxz\n");
 
-    while (1)
-    {
-        printf("1---tianjiacheliangweizhi\n");
-        printf("2---shanchucheliangweizhi\n");
-        printf("3---xianshiquanbucheliangweizhi\n");
-        printf("4---fanhuiliwozuijincheliangweizhi\n");
-        printf("5---tuichu\n");
-
-        printf("qingxuanzexiangyinggongneng\n");
         int code;
-        scanf("%d", &code);
-        if (code == 1)
-        {
-            printf("qingchurucheliangweizhidexzuobiao和yzuobiao：\n");
-            int x;
-            int y;
-            scanf("%d", &x);
-            scanf("%d", &y);
+        scanf("%d",&code);
 
-            arr[index].x = x;
-            arr[index].y = y;
+        if(code == 1){
 
-            index++;
-
-            printf("tianjiawancheng，dianjihuichejixu\n");
-            char xx;
-            scanf("%c", &xx);
-            scanf("%c", &xx);
         }
-        if (code == 2)
-        {
-            if (index > 0)
-            {
-
-                index--;
-                printf("shanchuwancheng，dianjihuichejixu\n");
-                char xx;
-                scanf("%c", &xx);
-                scanf("%c", &xx);
-            }
-            else
-            {
-
-                printf("wuchengliangweizhixinxi，shanchushibai，dianjihuichejixu\n");
-                char xx;
-                scanf("%c", &xx);
-                scanf("%c", &xx);
-            }
-        }
-        if (code == 3)
-        {
-            printf("suoyoucheliangweizhiruxia：\n");
-
-            for (int i = 0; i < index; i++)
-
-                for (int i = 0; i < index; i++)
-                {
-                    printf("di%dgecheliangdeweizhiwei(%d,%d)\n", i + 1, arr[i].x, arr[i].y);
-                    printf("di%dgecheliangdeweizhiwei(%d,%d)\n", i + 1, arr[i].x, arr[i].y);
-                }
-
-            printf("\n点击回车继续\n");
-            char xx;
-            scanf("%c", &xx);
-            scanf("%c", &xx);
-
-            scanf("%c", &xx);
-            scanf("%c", &xx);
-        }
-    if (code == 4)
-    {
-        printf("qingshurudangqianweizhizuobiao：\n");
-            int x;
-            int y;
-            scanf("%d",&x);
-            scanf("%d",&y);
-
+        if(code == 2){
             
-            double min = 100000;
-            int carID = 0;
-            for(int i=0;i<index;i++){
-                int dx = x - arr[i].x;
-                int dy = y - arr[i].y;
-                double l = sqrt(dx*dx+dy*dy);
-
-                
-                if(min > l){
-                    min = l;
-                    carID = i;
-                }
-            }
-
-             printf("yonghudangqianweizhiyu%dgechedejuliwei%lf，shizuixiaodejuli\n",carID+1,min);
-
-
-
-             printf("\ndianjihuichejixu\n");
-            char xx;
-            scanf("%c", &xx);
-            scanf("%c", &xx);
-              
-
-         }
-
-    
-    if (code == 5)
-    {
-        printf("yingyongyijingtuichu\n");
-        break;
+        }
+        if(code == 3){
+            
+        }
+        if(code == 4){
+            
+        }
+        if(code == 5){
+            
+        }
+        if(code == 6){
+            
+        }
+        if(code == 7){
+            
+        }
+        if(code == 8){
+            printf("tuichu\n");
+            break;
+        }
     }
+
+    return 0;
+
 }
-return 0;
-}
+
+
+
