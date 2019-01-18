@@ -44,6 +44,22 @@ int main(){
 
         }
         if(code == 2){
+            if(index > 0)
+            {
+
+                index--;
+                printf("shanchuchenggong,jinjihuichejixu\n");
+                char x;
+                scanf("%c",&x);
+                scanf("%c",&x);
+            }
+            else
+            {
+                printf("wuxueshengxinxi,shanchushabai,dianjihuichejixu\n");
+                char x;
+                scanf("%c",&x);
+                scanf("%c",&x);
+            }
             
         }
         if(code == 3){
